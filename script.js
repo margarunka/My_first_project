@@ -32,33 +32,9 @@ if (personalMovieDB.count <= 10) {
 
 for (let i = 0; i < 2; i++) {
     let a = prompt('Один из просмотрених фильмов?');
-    
-    do {
-     a = prompt('Один из просмотрених фильмов?');
-    } while (a == "" ||   a == null || a.length > 50);
-    
-    
-    // for (;;){
-    //     if (a == "") {
-    //         a = prompt('Один из просмотрених фильмов?');
-    //     }else if (a == null) {
-    //         a = prompt('Один из просмотрених фильмов?');
-    //     }else if (a.length > 50) {
-    //         a = prompt('Один из просмотрених фильмов?');
-    //     }else {
-    //         break;
-    //     }
-    // }
-    
-    
-    
-    
-    // while(a == "" || a == null || a.length > 50) {
-    //     a = prompt('Один из просмотрених фильмов?');
-    // }
-
-
-
+    while(a == "" || a == null || a.length > 50) {
+        a = prompt('Один из просмотрених фильмов?');
+    }
     let b = prompt('На сколько оцените его?');
      
     while(b == "" || b == null || b.length > 50) {
